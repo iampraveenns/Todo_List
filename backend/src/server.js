@@ -18,7 +18,7 @@ const __dirname = path.resolve()
 //connectDB();
 app.use(
     cors({
-        origin: ["http://localhost:5173", "https://your-netlify-site-name.netlify.app"],
+        origin: ["http://localhost:5173", "https://remaindme.netlify.app"],
     })
 )
 
