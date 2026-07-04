@@ -16,13 +16,12 @@ const __dirname = path.resolve()
 
 
 //connectDB();
-if (process.env.NODE_ENV !== "production") {
-    app.use(
-        cors({
-            origin: "http://localhost:5173",
-        })
-    )
-}
+app.use(
+    cors({
+        origin: ["http://localhost:5173", "https://your-netlify-site-name.netlify.app"],
+    })
+)
+
 app.use(express.json())
 app.use(rateLimit)
 
