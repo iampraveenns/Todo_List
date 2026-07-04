@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
-import moongose from "mongoose"
 
-const noteSchema = new moongose.Schema(
+const noteSchema = new mongoose.Schema(
     {
         title: {
             type: String,
